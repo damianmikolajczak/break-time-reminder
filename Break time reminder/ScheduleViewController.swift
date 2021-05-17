@@ -25,13 +25,29 @@ class ScheduleViewController: UIViewController {
         view.addGestureRecognizer(tap)
         
         fetchSchedule()
-        
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchSchedule()
     }
     
     func fetchSchedule() {
         do {
             self.schedules = try context.fetch(Schedule.fetchRequest())
+            
+            if schedules?.count != 0 {
+                let schedule = schedules?[0]
+                
+                breakLength.text = String(schedule!.length)
+                breakFrequency.text = String(schedule!.frequency)
+                
+                let formater = DateFormatter()
+                formater.timeStyle = .medium
+                startSchedule.text = formater.string(from: schedule!.startTime!)
+                endSchedule.text = formater.string(from: schedule!.endTime!)
+            }
+            
         } catch  {
             
         }

@@ -18,6 +18,8 @@
 		2D5FB9F6265193D4001FD354 /* Break_time_reminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5FB9F5265193D4001FD354 /* Break_time_reminderUITests.swift */; };
 		2D6CE6CE2652A03C000161F2 /* Schedule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CE6CC2652A03B000161F2 /* Schedule+CoreDataClass.swift */; };
 		2D6CE6CF2652A03C000161F2 /* Schedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CE6CD2652A03B000161F2 /* Schedule+CoreDataProperties.swift */; };
+		2D6CE6D12652A8E5000161F2 /* EditScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CE6D02652A8E5000161F2 /* EditScheduleViewController.swift */; };
+		2D6CE6D32652BB93000161F2 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CE6D22652BB93000161F2 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		2D5FB9F7265193D4001FD354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D6CE6CC2652A03B000161F2 /* Schedule+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2D6CE6CD2652A03B000161F2 /* Schedule+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2D6CE6D02652A8E5000161F2 /* EditScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScheduleViewController.swift; sourceTree = "<group>"; };
+		2D6CE6D22652BB93000161F2 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +111,11 @@
 			children = (
 				2D5FBA072651A95D001FD354 /* Model */,
 				2D5FB9D0265193D2001FD354 /* AppDelegate.swift */,
+				2D6CE6D02652A8E5000161F2 /* EditScheduleViewController.swift */,
 				2D5FB9D2265193D2001FD354 /* SceneDelegate.swift */,
 				2D5FB9D4265193D2001FD354 /* ScheduleViewController.swift */,
 				2D5FB9D6265193D2001FD354 /* Main.storyboard */,
+				2D6CE6D22652BB93000161F2 /* NotificationManager.swift */,
 				2D5FB9DC265193D4001FD354 /* Assets.xcassets */,
 				2D5FB9DE265193D4001FD354 /* LaunchScreen.storyboard */,
 				2D5FB9E1265193D4001FD354 /* Info.plist */,
@@ -280,6 +286,8 @@
 				2D5FB9D5265193D2001FD354 /* ScheduleViewController.swift in Sources */,
 				2D5FB9D1265193D2001FD354 /* AppDelegate.swift in Sources */,
 				2D5FB9D3265193D2001FD354 /* SceneDelegate.swift in Sources */,
+				2D6CE6D12652A8E5000161F2 /* EditScheduleViewController.swift in Sources */,
+				2D6CE6D32652BB93000161F2 /* NotificationManager.swift in Sources */,
 				2D6CE6CE2652A03C000161F2 /* Schedule+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
