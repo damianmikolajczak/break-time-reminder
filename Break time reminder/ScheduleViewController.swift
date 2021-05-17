@@ -11,7 +11,7 @@ class ScheduleViewController: UIViewController {
 
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    var schedule:Schedule?
+    var schedules:[Schedule]?
     
     @IBOutlet weak var breakLength: UILabel!
     @IBOutlet weak var breakFrequency: UILabel!
@@ -25,11 +25,13 @@ class ScheduleViewController: UIViewController {
         view.addGestureRecognizer(tap)
         
         fetchSchedule()
+        
+        
     }
     
     func fetchSchedule() {
         do {
-            self.schedule = try context.fetch(Schedule.fetchRequest())
+            self.schedules = try context.fetch(Schedule.fetchRequest())
         } catch  {
             
         }
