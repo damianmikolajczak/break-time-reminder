@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		2D5FB9D1265193D2001FD354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5FB9D0265193D2001FD354 /* AppDelegate.swift */; };
 		2D5FB9D3265193D2001FD354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5FB9D2265193D2001FD354 /* SceneDelegate.swift */; };
-		2D5FB9D5265193D2001FD354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5FB9D4265193D2001FD354 /* ViewController.swift */; };
+		2D5FB9D5265193D2001FD354 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5FB9D4265193D2001FD354 /* ScheduleViewController.swift */; };
 		2D5FB9D8265193D2001FD354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5FB9D6265193D2001FD354 /* Main.storyboard */; };
 		2D5FB9DB265193D2001FD354 /* Break_time_reminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D5FB9D9265193D2001FD354 /* Break_time_reminder.xcdatamodeld */; };
 		2D5FB9DD265193D4001FD354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5FB9DC265193D4001FD354 /* Assets.xcassets */; };
 		2D5FB9E0265193D4001FD354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5FB9DE265193D4001FD354 /* LaunchScreen.storyboard */; };
 		2D5FB9EB265193D4001FD354 /* Break_time_reminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5FB9EA265193D4001FD354 /* Break_time_reminderTests.swift */; };
 		2D5FB9F6265193D4001FD354 /* Break_time_reminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5FB9F5265193D4001FD354 /* Break_time_reminderUITests.swift */; };
+		2D6CE6CE2652A03C000161F2 /* Schedule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CE6CC2652A03B000161F2 /* Schedule+CoreDataClass.swift */; };
+		2D6CE6CF2652A03C000161F2 /* Schedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CE6CD2652A03B000161F2 /* Schedule+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		2D5FB9CD265193D2001FD354 /* Break time reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Break time reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5FB9D0265193D2001FD354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D5FB9D2265193D2001FD354 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D5FB9D4265193D2001FD354 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D5FB9D4265193D2001FD354 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		2D5FB9D7265193D2001FD354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D5FB9DA265193D2001FD354 /* Break_time_reminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Break_time_reminder.xcdatamodel; sourceTree = "<group>"; };
 		2D5FB9DC265193D4001FD354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		2D5FB9F1265193D4001FD354 /* Break time reminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Break time reminderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5FB9F5265193D4001FD354 /* Break_time_reminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Break_time_reminderUITests.swift; sourceTree = "<group>"; };
 		2D5FB9F7265193D4001FD354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D6CE6CC2652A03B000161F2 /* Schedule+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2D6CE6CD2652A03B000161F2 /* Schedule+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +105,10 @@
 		2D5FB9CF265193D2001FD354 /* Break time reminder */ = {
 			isa = PBXGroup;
 			children = (
+				2D5FBA072651A95D001FD354 /* Model */,
 				2D5FB9D0265193D2001FD354 /* AppDelegate.swift */,
 				2D5FB9D2265193D2001FD354 /* SceneDelegate.swift */,
-				2D5FB9D4265193D2001FD354 /* ViewController.swift */,
+				2D5FB9D4265193D2001FD354 /* ScheduleViewController.swift */,
 				2D5FB9D6265193D2001FD354 /* Main.storyboard */,
 				2D5FB9DC265193D4001FD354 /* Assets.xcassets */,
 				2D5FB9DE265193D4001FD354 /* LaunchScreen.storyboard */,
@@ -129,6 +134,15 @@
 				2D5FB9F7265193D4001FD354 /* Info.plist */,
 			);
 			path = "Break time reminderUITests";
+			sourceTree = "<group>";
+		};
+		2D5FBA072651A95D001FD354 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D6CE6CC2652A03B000161F2 /* Schedule+CoreDataClass.swift */,
+				2D6CE6CD2652A03B000161F2 /* Schedule+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6CE6CF2652A03C000161F2 /* Schedule+CoreDataProperties.swift in Sources */,
 				2D5FB9DB265193D2001FD354 /* Break_time_reminder.xcdatamodeld in Sources */,
-				2D5FB9D5265193D2001FD354 /* ViewController.swift in Sources */,
+				2D5FB9D5265193D2001FD354 /* ScheduleViewController.swift in Sources */,
 				2D5FB9D1265193D2001FD354 /* AppDelegate.swift in Sources */,
 				2D5FB9D3265193D2001FD354 /* SceneDelegate.swift in Sources */,
+				2D6CE6CE2652A03C000161F2 /* Schedule+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
